@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" module main 1
+""" Main 1
 """
 from api.v1.auth.auth import Auth
 

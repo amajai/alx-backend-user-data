@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" index module
+""" Module of Index views
 """
 from flask import jsonify, abort
 from api.v1.views import app_views
@@ -21,6 +21,7 @@ def stats() -> str:
       - the number of each objects
     """
     from models.user import User
+
     stats = {}
     stats["users"] = User.count()
     return jsonify(stats)
